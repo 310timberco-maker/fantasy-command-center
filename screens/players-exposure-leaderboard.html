@@ -1,0 +1,382 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#111317;color:#e2e2e8;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-secondary-fixed': '#410006', 'error-container': '#93000a', 'tertiary-container': '#8c919b', 'tertiary-fixed-dim': '#c2c6d1', 'on-tertiary-fixed': '#171c23', 'tertiary-fixed': '#dee2ed', 'surface-container': '#1e2024', 'secondary-fixed-dim': '#ffb3af', 'on-error': '#690005', 'on-tertiary': '#2c3139', 'on-tertiary-fixed-variant': '#424750', 'inverse-primary': '#0058cc', 'secondary-container': '#ad001f', 'on-error-container': '#ffdad6', 'primary-fixed': '#d9e2ff', 'tertiary': '#c2c6d1', 'on-primary': '#002c6f', 'surface-variant': '#333539', 'on-secondary-container': '#ffb8b4', 'outline': '#8c90a0', 'on-primary-fixed-variant': '#00419c', 'inverse-on-surface': '#2f3035', 'on-background': '#e2e2e8', 'surface-container-lowest': '#0c0e12', 'on-secondary': '#68000e', 'on-secondary-fixed-variant': '#930019', 'primary-fixed-dim': '#b0c6ff', 'primary': '#b0c6ff', 'surface': '#111317', 'outline-variant': '#424654', 'secondary-fixed': '#ffdad8', 'surface-container-high': '#282a2e', 'primary-container': '#568cff', 'secondary': '#ffb3af', 'on-primary-fixed': '#001945', 'surface-dim': '#111317', 'surface-container-highest': '#333539', 'on-primary-container': '#002662', 'on-tertiary-container': '#252a32', 'background': '#111317', 'inverse-surface': '#e2e2e8', 'surface-tint': '#b0c6ff', 'on-surface-variant': '#c2c6d7', 'on-surface': '#e2e2e8', 'surface-bright': '#37393e', 'error': '#ffb4ab', 'surface-container-low': '#1a1c20' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'space-xl': '1.5rem', 'space-sm': '0.5rem', 'space-xs': '0.25rem', 'margin-mobile': '0.75rem', 'gutter': '0.5rem', 'space-lg': '1rem', 'space-md': '0.75rem', 'gutter-mobile': '0.5rem', 'margin': '0.75rem' }, fontFamily: { 'headline-sm': ['Hanken Grotesk'], 'label-sm': ['Geist'], 'body-lg': ['Geist'], 'label-md': ['Geist'], 'body-md': ['Geist'], 'headline-md': ['Hanken Grotesk'], 'headline-xl': ['Hanken Grotesk'], 'label-lg': ['Geist'], 'headline-lg': ['Hanken Grotesk'], 'body-sm': ['Geist'] }, fontSize: { 'headline-sm': ['15px', { lineHeight: '18px', letterSpacing: '0em', fontWeight: '600' }], 'label-sm': ['9px', { lineHeight: '10px', letterSpacing: '0.08em', fontWeight: '700' }], 'body-lg': ['15px', { lineHeight: '20px', fontWeight: '400' }], 'label-md': ['10px', { lineHeight: '12px', letterSpacing: '0.06em', fontWeight: '600' }], 'body-md': ['13px', { lineHeight: '18px', fontWeight: '400' }], 'headline-md': ['18px', { lineHeight: '22px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-xl': ['32px', { lineHeight: '36px', letterSpacing: '-0.03em', fontWeight: '800' }], 'label-lg': ['12px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '600' }], 'headline-lg': ['24px', { lineHeight: '28px', letterSpacing: '-0.02em', fontWeight: '700' }], 'body-sm': ['11px', { lineHeight: '14px', fontWeight: '400' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.6)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Gridiron Command Logo" class="h-8 w-auto object-contain flex-shrink-0" src="../assets/images/gridiron-command-logo.png"><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant truncate">WEEK 7 • SUNDAY LIVE</span><span class="text-[9px] text-[#8F9AA8]">•</span><span class="flex items-center gap-1 text-[9px] font-semibold uppercase tracking-wider text-[#34D399]"><span class="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-ping"></span>Updated 8s ago</span></div><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight truncate">Players</span><span class="bg-surface-container-high text-primary px-1.5 py-0.5 rounded font-label-sm text-label-sm tracking-widest uppercase font-semibold">5 SYNCED</span></div></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><button class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pt-space-sm pb-space-lg gap-space-md" style="background-color: rgb(18, 22, 28);"><!-- Header Summary & KPI Ribbon -->
+  <div class="flex flex-col gap-space-xs">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-[18px]" style="color: #3478F6;">leaderboard</span>
+        <span class="font-label-sm uppercase tracking-widest font-bold" style="color: #3478F6;">FANTASY EXPOSURE LEADERBOARD</span>
+      </div>
+      <div class="flex items-center gap-1.5 text-[10px] font-semibold text-[#8F9AA8]">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
+        <span class="">5 SYNCED LEAGUES</span>
+      </div>
+    </div>
+    <div class="flex items-center justify-between">
+      <p class="font-body-sm text-[12px] leading-tight text-[#8F9AA8]">Aggregated leverage quantification across all synced rosters. Strictly unique players.</p>
+      <span class="text-[10px] font-medium text-[#10B981] bg-[#10B981]/10 px-1.5 py-0.5 rounded flex items-center gap-1 flex-shrink-0">
+        <span class="w-1 h-1 rounded-full bg-[#10B981] animate-ping"></span>LIVE · 8s ago
+      </span>
+    </div>
+  </div>
+
+  <!-- Quick Stat Tickers -->
+  <div class="grid grid-cols-3 gap-2 p-2.5 rounded-lg border" style="background-color: rgb(27, 32, 40); border-color: rgb(52, 60, 72);">
+    <div class="flex flex-col">
+      <span class="text-[9px] uppercase tracking-wider font-semibold text-[#8F9AA8]">NET PORTFOLIO</span>
+      <span class="font-headline-sm text-[16px] font-bold tracking-tight text-[#3478F6]">+8 PTS DELTA</span>
+      <span class="text-[10px] text-[#8F9AA8]">4 Net Matches Up</span>
+    </div>
+    <div class="flex flex-col border-l pl-2.5" style="border-color: #343C48;">
+      <span class="text-[9px] uppercase tracking-wider font-semibold text-[#8F9AA8]">TOP CONFLICT</span>
+      <span class="font-headline-sm text-[14px] font-bold truncate text-[#F2B84B]">T. KELCE (KC)</span>
+      <span class="text-[10px] text-[#8F9AA8]">1 vs 1 Head-to-Head</span>
+    </div>
+    <div class="flex flex-col border-l pl-2.5" style="border-color: #343C48;">
+      <span class="text-[9px] uppercase tracking-wider font-semibold text-[#8F9AA8]">MAX THREAT</span>
+      <span class="font-headline-sm text-[14px] font-bold truncate text-[#EF4650]">C. LAMB (DAL)</span>
+      <span class="text-[10px] font-semibold text-[#EF4650]">3 Opponent Rosters</span>
+    </div>
+  </div>
+
+  <!-- Search Control + Status Filter Bar -->
+  <div class="flex flex-col gap-2 sticky top-16 z-40 -mx-margin-mobile px-margin-mobile py-2 border-b backdrop-blur-md" style="background-color: rgba(18, 22, 28, 0.95); border-color: rgb(52, 60, 72);" id="filter-bar">
+    <!-- Compact Search Control -->
+    <div class="relative flex items-center w-full">
+      <span class="material-symbols-outlined text-[16px] absolute left-2.5 text-[#8F9AA8]">search</span>
+      <input id="player-search" type="text" placeholder="Search player, NFL team, or pos..." class="w-full bg-[#12161C] border border-[#343C48] rounded text-[12px] text-[#e2e2e8] placeholder-[#8F9AA8] pl-8 pr-7 py-1.5 focus:outline-none focus:border-[#3478F6] transition-colors" oninput="searchPlayers(this.value)">
+      <span class="material-symbols-outlined text-[14px] absolute right-2.5 text-[#8F9AA8] cursor-pointer hover:text-white" onclick="document.getElementById('player-search').value='';searchPlayers('');">close</span>
+    </div>
+
+    <!-- Filter Pills -->
+    <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+      <button class="flex items-center gap-1.5 px-3 py-1 rounded font-label-md text-[11px] font-bold uppercase tracking-wider text-white" style="background-color: #3478F6;" onclick="setFilter(this, 'all')">
+        <span class="">ALL</span>
+        <span class="px-1 py-0.2 rounded-full text-[9px] font-bold bg-white/20">8</span>
+      </button>
+      <button class="flex items-center gap-1 px-3 py-1 rounded font-label-md text-[11px] font-semibold uppercase tracking-wider border text-[#8F9AA8] bg-[#1B2028] border-[#343C48]" onclick="setFilter(this, 'live')">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#EF4650] animate-pulse"></span>
+        <span class="">LIVE NOW</span>
+        <span class="text-[10px] text-[#EF4650]">(2)</span>
+      </button>
+      <button class="flex items-center gap-1.5 px-3 py-1 rounded font-label-md text-[11px] font-semibold uppercase tracking-wider border text-[#8F9AA8] bg-[#1B2028] border-[#343C48]" onclick="setFilter(this, 'mine')">
+        <span class="">MINE</span>
+        <span class="text-[10px] text-[#3478F6]">(4)</span>
+      </button>
+      <button class="flex items-center gap-1.5 px-3 py-1 rounded font-label-md text-[11px] font-semibold uppercase tracking-wider border text-[#8F9AA8] bg-[#1B2028] border-[#343C48]" onclick="setFilter(this, 'opponents')">
+        <span class="">OPPONENTS</span>
+        <span class="text-[10px] text-[#EF4650]">(3)</span>
+      </button>
+      <button class="flex items-center gap-1 px-3 py-1 rounded font-label-md text-[11px] font-semibold uppercase tracking-wider border text-[#8F9AA8] bg-[#1B2028] border-[#343C48]" onclick="setFilter(this, 'upcoming')">
+        <span class="">UP NEXT</span>
+        <span class="text-[10px]">(3)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= SECTION 1: LIVE NOW ================= -->
+  <section class="section-group flex flex-col gap-2" data-section="live">
+    <div class="flex items-center justify-between px-0.5">
+      <div class="flex items-center gap-1.5 font-label-sm font-bold uppercase tracking-wider text-[#EF4650]">
+        <span class="w-2 h-2 rounded-full bg-[#EF4650] animate-pulse"></span>
+        <span class="material-symbols-outlined text-[16px]">sensors</span>
+        <span class="">LIVE NOW (ACTIVE IMPACT)</span>
+      </div>
+      <span class="font-label-sm uppercase tracking-wider text-[9px] text-[#8F9AA8]">SORTED BY NET EXPOSURE</span>
+    </div>
+
+    <!-- #1 HERO PLAYER: JOSH ALLEN (LIVE: BUF vs KC, Q3 4:12) -->
+    <article class="player-card flex flex-col rounded-lg p-3 border relative overflow-hidden shadow-md gap-2.5 transition-all" style="background-color: #1B2028; border-color: #3478F6;" data-name="josh allen buf qb bills" data-status="live" data-affiliation="mine">
+      <div class="flex items-start justify-between gap-2">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 border-2 border-[#3478F6] bg-[#12161C]">
+            <img class="w-full h-full object-cover" alt="Josh Allen portrait" src="../assets/images/josh-allen-live.jpg">
+            <span class="absolute top-0 left-0 text-white font-label-sm text-[8px] px-1 py-0.2 rounded-br font-bold bg-[#3478F6]">#1</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-baseline gap-1.5 truncate">
+              <span class="font-headline-sm text-[16px] uppercase font-bold tracking-tight text-white truncate">JOSH ALLEN</span>
+              <span class="text-[10px] font-bold px-1 rounded bg-[#3478F6]/20 text-[#3478F6]">QB</span>
+              <span class="text-[9px] font-bold px-1 py-0.2 rounded bg-[#EF4650]/20 text-[#EF4650] animate-pulse">Q3 4:12</span>
+            </div>
+            <span class="text-[11px] font-medium truncate text-[#8F9AA8]">#17 · BUF vs KC (21-17) · CBS</span>
+            <div class="flex items-center gap-1.5 mt-0.5 text-[10px]">
+              <span class="font-semibold text-[#3478F6]">18.4 FPTS</span>
+              <span class="text-[#343C48]">•</span>
+              <span class="font-semibold text-[#10B981]">Leverage: Max (+2 Net)</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded text-white shadow-sm bg-[#3478F6]">+2 NET UPSIDE</span>
+          <div class="flex items-center gap-1 text-[9px] font-bold mt-1">
+            <span class="text-[#3478F6]">YOURS ×3</span>
+            <span class="text-[#8F9AA8]">|</span>
+            <span class="text-[#EF4650]">OPP ×1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exposure Progress Bar -->
+      <div class="w-full h-2 rounded-full overflow-hidden flex gap-0.5 p-0.5 bg-[#12161C]">
+        <div class="h-full rounded-l-full bg-[#3478F6]" style="width: 60%;"></div>
+        <div class="h-full bg-[#EF4650]" style="width: 20%;"></div>
+        <div class="h-full rounded-r-full bg-[#343C48]" style="width: 20%;"></div>
+      </div>
+
+      <!-- Interactive League Roster Breakdown (Single Aggregated Entity) -->
+      <details class="group">
+        <summary class="cursor-pointer flex items-center justify-between px-2 py-1.5 rounded bg-[#12161C] border border-[#343C48] text-[11px] font-bold text-[#3478F6] hover:text-white transition-colors list-none">
+          <span class="flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">sync_alt</span>
+            <span class="">BREAKDOWN: 3 MINE / 1 OPPONENT LEAGUES</span>
+          </span>
+          <span class="material-symbols-outlined text-[16px] group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="mt-1.5 p-2 rounded bg-[#12161C] border border-[#343C48] flex flex-col gap-1 text-[10px]">
+          <div class="flex items-center justify-between text-[#8F9AA8]">
+            <span class="text-[#3478F6] font-semibold">• Altitude 48 (Mine)</span>
+            <span class="text-white font-medium">Opp has J. Goff · Lead by +14.2</span>
+          </div>
+          <div class="flex items-center justify-between text-[#8F9AA8]">
+            <span class="text-[#3478F6] font-semibold">• NFL Out (Mine)</span>
+            <span class="text-white font-medium">Opp has P. Mahomes · Lead by +6.8</span>
+          </div>
+          <div class="flex items-center justify-between text-[#8F9AA8]">
+            <span class="text-[#3478F6] font-semibold">• Ezrah Dynasty (Mine)</span>
+            <span class="text-white font-medium">Opp has D. Prescott · Trailing by -3.1</span>
+          </div>
+          <div class="flex items-center justify-between pt-1 border-t border-[#343C48]">
+            <span class="text-[#EF4650] font-semibold">• Sunday Crew (Opponent)</span>
+            <span class="text-[#EF4650] font-medium">Risk: TD cuts user lead to +2.4</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+    <!-- #2 LIVE CONFLICT: TRAVIS KELCE (KC vs BUF, Q3 4:12) -->
+    <article class="player-card flex flex-col rounded-lg p-2.5 border shadow-sm gap-2 transition-all" style="background-color: #1B2028; border-color: #343C48; border-left: 4px solid #F2B84B;" data-name="travis kelce kc te chiefs" data-status="live" data-affiliation="conflicts">
+      <div class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="relative w-10 h-10 rounded overflow-hidden flex-shrink-0 bg-[#12161C]">
+            <img class="w-full h-full object-cover" alt="Travis Kelce portrait" src="../assets/images/travis-kelce-live.jpg">
+            <span class="absolute top-0 left-0 text-black font-label-sm text-[8px] px-1 py-0.2 rounded-br font-bold bg-[#F2B84B]">LIVE</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-1.5 truncate">
+              <span class="font-headline-sm text-[14px] uppercase font-bold text-white truncate">TRAVIS KELCE</span>
+              <span class="text-[9px] font-bold px-1 rounded bg-[#12161C] text-[#F2B84B]">TE</span>
+              <span class="text-[9px] font-bold px-1 rounded bg-[#EF4650]/20 text-[#EF4650] animate-pulse">Q3 4:12</span>
+            </div>
+            <span class="text-[11px] truncate text-[#8F9AA8]">#87 · KC @ BUF · 4 rec, 48 yds (8.8 FPTS)</span>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded text-black bg-[#F2B84B]">0 NET CONFLICT</span>
+          <div class="flex items-center gap-1 text-[9px] font-bold mt-0.5">
+            <span class="text-[#3478F6]">YOURS ×1</span>
+            <span class="text-[#8F9AA8]">vs</span>
+            <span class="text-[#EF4650]">OPP ×1</span>
+          </div>
+        </div>
+      </div>
+      <!-- Symmetrical Conflict Exposure Bar -->
+      <div class="w-full h-1.5 rounded-full overflow-hidden flex gap-0.5 bg-[#12161C]">
+        <div class="h-full rounded-l-full bg-[#3478F6]" style="width: 20%;"></div>
+        <div class="h-full bg-[#EF4650]" style="width: 20%;"></div>
+        <div class="h-full rounded-r-full bg-[#343C48]" style="width: 60%;"></div>
+      </div>
+      <details class="group">
+        <summary class="cursor-pointer flex items-center justify-between text-[10px] font-bold text-[#F2B84B] list-none">
+          <span class="">CLASH DETAILS: ALTITUDE 48 (TE PREM) vs NFL OUT</span>
+          <span class="material-symbols-outlined text-[14px] group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="mt-1 p-2 rounded bg-[#12161C] text-[10px] text-[#8F9AA8] leading-relaxed">
+          Altitude 48 has +1.5 TE PPR premium. Kelce scoring favors your roster equity by +0.5 pts per reception over opponent. Root for short receptions/TDs.
+        </div>
+      </details>
+    </article>
+  </section>
+
+  <!-- ================= SECTION 2: UP NEXT (KICKOFF ORDER) ================= -->
+  <section class="section-group flex flex-col gap-2" data-section="upcoming">
+    <div class="flex items-center justify-between px-0.5">
+      <div class="flex items-center gap-1.5 font-label-sm font-bold uppercase tracking-wider text-[#3478F6]">
+        <span class="material-symbols-outlined text-[16px]">update</span>
+        <span class="">UP NEXT (KICKOFF ORDER)</span>
+      </div>
+      <span class="font-label-sm uppercase tracking-wider text-[9px] text-[#8F9AA8]">SORTED BY TIME &amp; NET EXPOSURE</span>
+    </div>
+
+    <!-- #3 CEEDEE LAMB (7:20 PM NBC - DAL @ PHI) Opponent Threat -->
+    <article class="player-card flex flex-col rounded-lg p-2.5 border shadow-sm gap-2 transition-all" style="background-color: #1B2028; border-color: #343C48; border-left: 4px solid #EF4650;" data-name="ceedee lamb dal wr cowboys" data-status="upcoming" data-affiliation="opponents">
+      <div class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="relative w-10 h-10 rounded overflow-hidden flex-shrink-0 bg-[#12161C]">
+            <img class="w-full h-full object-cover" alt="CeeDee Lamb portrait" src="../assets/images/ceedee-lamb-upcoming.jpg">
+            <span class="absolute top-0 left-0 text-white font-label-sm text-[8px] px-1 py-0.2 rounded-br font-bold bg-[#EF4650]">7:20P</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-1.5 truncate">
+              <span class="font-headline-sm text-[14px] uppercase font-bold text-white truncate">CEEDEE LAMB</span>
+              <span class="text-[9px] font-bold px-1 rounded bg-[#EF4650]/20 text-[#EF4650]">WR</span>
+            </div>
+            <span class="text-[11px] truncate text-[#8F9AA8]">#88 · DAL @ PHI · 7:20 PM · NBC</span>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded text-white bg-[#EF4650]">-3 NET RISK</span>
+          <span class="text-[9px] font-bold uppercase text-[#EF4650] mt-0.5">OPPONENT ×3</span>
+        </div>
+      </div>
+      <!-- Exposure Bar -->
+      <div class="w-full h-1.5 rounded-full overflow-hidden flex gap-0.5 bg-[#12161C]">
+        <div class="h-full bg-[#343C48]" style="width: 40%;"></div>
+        <div class="h-full rounded-r-full bg-[#EF4650]" style="width: 60%;"></div>
+      </div>
+      <details class="group">
+        <summary class="cursor-pointer flex items-center justify-between text-[10px] text-[#8F9AA8] list-none">
+          <span class="">OPPONENTS IN: ALTITUDE 48, METRO, SUNDAY CREW</span>
+          <span class="material-symbols-outlined text-[14px] group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="mt-1 p-2 rounded bg-[#12161C] text-[10px] text-[#8F9AA8] flex flex-col gap-0.5">
+          <span class="text-[#EF4650] font-semibold">• Critical defensive exposure across 3 matchups.</span>
+          <span class="">High scoring game script threatens multiple close weekly leads.</span>
+        </div>
+      </details>
+    </article>
+
+    <!-- #4 JALEN HURTS (7:20 PM NBC - PHI vs DAL) Neutral Split -->
+    <article class="player-card flex flex-col rounded-lg p-2.5 border shadow-sm gap-2 transition-all" style="background-color: #1B2028; border-color: #343C48; border-left: 4px solid #8F9AA8;" data-name="jalen hurts phi qb eagles" data-status="upcoming" data-affiliation="conflicts">
+      <div class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="relative w-10 h-10 rounded overflow-hidden flex-shrink-0 bg-[#12161C]">
+            <img class="w-full h-full object-cover" alt="Jalen Hurts portrait" src="../assets/images/jalen-hurts-upcoming.jpg">
+            <span class="absolute top-0 left-0 text-white font-label-sm text-[8px] px-1 py-0.2 rounded-br font-bold bg-[#343C48]">7:20P</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-1.5 truncate">
+              <span class="font-headline-sm text-[14px] uppercase font-bold text-white truncate">JALEN HURTS</span>
+              <span class="text-[9px] font-bold px-1 rounded bg-[#12161C] text-[#8F9AA8]">QB</span>
+            </div>
+            <span class="text-[11px] truncate text-[#8F9AA8]">#1 · PHI vs DAL · 7:20 PM · NBC</span>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded border border-[#343C48] bg-[#12161C] text-[#8F9AA8]">0 NET SPLIT</span>
+          <span class="text-[9px] font-semibold uppercase text-[#8F9AA8] mt-0.5">YOURS ×1 | OPP ×1</span>
+        </div>
+      </div>
+      <div class="w-full h-1.5 rounded-full overflow-hidden flex gap-0.5 bg-[#12161C]">
+        <div class="h-full rounded-l-full bg-[#3478F6]" style="width: 20%;"></div>
+        <div class="h-full bg-[#EF4650]" style="width: 20%;"></div>
+        <div class="h-full rounded-r-full bg-[#343C48]" style="width: 60%;"></div>
+      </div>
+      <div class="text-[10px] text-[#8F9AA8] truncate">
+        <span class="font-semibold text-white">Rosters:</span> Ezrah Dynasty (Mine) vs Metro High Stakes (Opponent)
+      </div>
+    </article>
+  </section>
+
+  <!-- ================= SECTION 3: FINAL (COMPLETED PLAYERS - COLLAPSED BY DEFAULT) ================= -->
+  <section class="section-group flex flex-col gap-1" data-section="final">
+    <details class="group rounded-lg border border-[#343C48] bg-[#1B2028] overflow-hidden">
+      <summary class="cursor-pointer flex items-center justify-between p-3 list-none text-[#8F9AA8] hover:text-white transition-colors select-none">
+        <div class="flex items-center gap-2 font-label-sm uppercase font-bold tracking-wider">
+          <span class="material-symbols-outlined text-[16px] text-[#8F9AA8]">task_alt</span>
+          <span class="">FINAL · 2 COMPLETED PLAYERS (TAP TO EXPAND)</span>
+        </div>
+        <span class="material-symbols-outlined text-[18px] group-open:rotate-180 transition-transform duration-200">expand_more</span>
+      </summary>
+      <div class="p-2.5 pt-0 border-t border-[#343C48]/60 flex flex-col gap-2 mt-2">
+        <!-- Completed Player 1: Jahmyr Gibbs -->
+        <div class="player-card flex items-center justify-between p-2 rounded bg-[#12161C] opacity-75 hover:opacity-100 transition-opacity" data-name="jahmyr gibbs det rb lions" data-status="final" data-affiliation="mine">
+          <div class="flex items-center gap-2 min-w-0">
+            <div class="w-8 h-8 rounded bg-[#1B2028] overflow-hidden flex-shrink-0">
+              <img class="w-full h-full object-cover grayscale" alt="Jahmyr Gibbs" src="../assets/images/jahmyr-gibbs-final.jpg">
+            </div>
+            <div class="flex flex-col min-w-0">
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold text-[13px] text-white truncate">JAHMYR GIBBS</span>
+                <span class="text-[9px] px-1 rounded bg-[#343C48] text-[#8F9AA8]">FINAL</span>
+              </div>
+              <span class="text-[10px] text-[#8F9AA8]">DET @ GB · 21.4 FPTS · 2 Mine (Ezrah, Metro)</span>
+            </div>
+          </div>
+          <div class="flex flex-col items-end flex-shrink-0">
+            <span class="text-[10px] font-bold text-[#3478F6]">+2 NET (WON)</span>
+            <span class="text-[9px] text-[#8F9AA8]">YOURS ×2</span>
+          </div>
+        </div>
+
+        <!-- Completed Player 2: Justin Jefferson -->
+        <div class="player-card flex items-center justify-between p-2 rounded bg-[#12161C] opacity-75 hover:opacity-100 transition-opacity" data-name="justin jefferson min wr vikings" data-status="final" data-affiliation="mine">
+          <div class="flex items-center gap-2 min-w-0">
+            <div class="w-8 h-8 rounded bg-[#1B2028] overflow-hidden flex-shrink-0">
+              <img class="w-full h-full object-cover grayscale" alt="Justin Jefferson" src="../assets/images/justin-jefferson-final.jpg">
+            </div>
+            <div class="flex flex-col min-w-0">
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold text-[13px] text-white truncate">JUSTIN JEFFERSON</span>
+                <span class="text-[9px] px-1 rounded bg-[#343C48] text-[#8F9AA8]">FINAL</span>
+              </div>
+              <span class="text-[10px] text-[#8F9AA8]">MIN vs DET · 18.2 FPTS · 2 Mine (Altitude, NFL Out)</span>
+            </div>
+          </div>
+          <div class="flex flex-col items-end flex-shrink-0">
+            <span class="text-[10px] font-bold text-[#3478F6]">+2 NET (WON)</span>
+            <span class="text-[9px] text-[#8F9AA8]">YOURS ×2</span>
+          </div>
+        </div>
+      </div>
+    </details>
+  </section>
+</div>
+
+<script>
+  function toggleRootingGuide(button) {
+    const card = button.closest('article');
+    const drawer = card.querySelector('.rooting-drawer');
+    const chevron = button.querySelector('.chevron-icon');
+
+    if (drawer.classList.contains('hidden')) {
+      drawer.classList.remove('hidden');
+      if (chevron) chevron.style.transform = 'rotate(180deg)';
+    } else {
+      drawer.classList.add('hidden');
+      if (chevron) chevron.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  function setFilter(btn, filterType) {
+    const buttons = document.querySelectorAll('#filter-bar button');
+    buttons.forEach(b => {
+      b.style.backgroundColor = '#1B2028';
+      b.style.color = '#8F9AA8';
+      b.classList.remove('text-white');
+    });
+
+    btn.style.backgroundColor = '#3478F6';
+    btn.style.color = '#FFFFFF';
+    btn.classList.add('text-white');
+
+    const articles = document.querySelectorAll('article[data-player-type]');
+    articles.forEach(article => {
+      const type = article.getAttribute('data-player-type');
+      if (filterType === 'all' || filterType === 'later') {
+        article.style.display = 'flex';
+      } else if (filterType === 'mine') {
+        article.style.display = (type === 'mine') ? 'flex' : 'none';
+      } else if (filterType === 'opponents') {
+        article.style.display = (type === 'opponents') ? 'flex' : 'none';
+      } else if (filterType === 'live') {
+        article.style.display = 'none';
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.7)]" data-active-classes="text-primary font-bold after:content-[''] after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:w-8 after:h-0.5 after:bg-primary"><div class="grid grid-cols-5 items-center h-16 px-gutter-mobile"><a class="relative flex flex-col items-center justify-center gap-0.5 h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="watch" href="{{DATA:SCREEN:SCREEN_24}}"><span class="material-symbols-outlined text-[22px]">live_tv</span><span class="font-label-md text-label-md tracking-wider uppercase">Watch</span></a><a class="relative flex flex-col items-center justify-center gap-0.5 h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="matchups" href="{{DATA:SCREEN:SCREEN_23}}"><span class="material-symbols-outlined text-[22px]">scoreboard</span><span class="font-label-md text-label-md tracking-wider uppercase">Matchups</span></a><a aria-current="page" class="relative flex flex-col items-center justify-center gap-0.5 h-full min-h-[44px] transition-colors font-bold" style="color: rgb(52, 120, 246);" data-path="players" href="{{DATA:SCREEN:SCREEN_21}}"><div class="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-0.5 rounded-full" style="background-color: #3478F6;"></div><span class="material-symbols-outlined text-[22px]" style="color: #3478F6;">shield_person</span><span class="font-label-md text-label-md tracking-wider uppercase font-bold" style="color: #3478F6;">Players</span></a><a class="relative flex flex-col items-center justify-center gap-0.5 h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="activity" href="{{DATA:SCREEN:SCREEN_20}}"><div class="relative"><span class="material-symbols-outlined text-[22px]">bolt</span><span class="absolute -top-0.5 -right-1 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><span class="font-label-md text-label-md tracking-wider uppercase">Activity</span></a><a class="relative flex flex-col items-center justify-center gap-0.5 h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="leagues" href="{{DATA:SCREEN:SCREEN_4}}"><span class="material-symbols-outlined text-[22px]">military_tech</span><span class="font-label-md text-label-md tracking-wider uppercase">Leagues</span></a></div></nav>
+</body></html>
